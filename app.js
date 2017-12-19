@@ -1,7 +1,7 @@
 var restify = require('restify');
 var builder = require('botbuilder');
 var apiairecognizer = require('api-ai-recognizer');
-var recognizer = new apiairecognizer('f64e1a019de74e61aa7c168a5bb116f2'); 
+var recognizer = new apiairecognizer(process.env.apiai_key); 
 
 var connector = new builder.ChatConnector({
 
